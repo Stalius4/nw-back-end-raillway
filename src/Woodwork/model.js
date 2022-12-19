@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
 
-  date: { type: Date, default: Date.now },  
+   date: { type: String, default: Date } ,  
   timber_price: {
     type: Number ,
     default: "no price"
@@ -32,6 +32,10 @@ const userSchema = new mongoose.Schema({
     default: "no price"
   },
  ironwood_price: {
+    type: Number ,
+    default: "no price"
+  },
+  sandpaper_price: {
     type: Number ,
     default: "no price"
   },
