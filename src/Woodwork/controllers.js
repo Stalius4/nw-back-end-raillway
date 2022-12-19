@@ -24,6 +24,7 @@ exports.createTimber = async (req, res) => {
         agedwood_price: req.body.agedwood_price,
         wyrdwood_price:req.body.wyrdwood_price,
         ironwood_price: req.body.ironwood_price,
+        sandpaper_price: req.body.sandpaper_price,
    
       };
       const timberPrice = await Woodwork.create(userObj);
